@@ -1,0 +1,49 @@
+<html>
+<p>
+    My family book
+    </p>
+    <img src ="https://st.depositphotos.com/1724125/2693/v/950/depositphotos_26930203-stock-illustration-cartoon-dad.jpg" style="width: 30%;" id="family_member_image">
+    <h4 id="family_member_name"></h4>
+
+    <button onclick="update();">Next</button>
+   
+
+<script>
+   
+ 
+
+ var images = ["https://st.depositphotos.com/1724125/2693/v/950/depositphotos_26930203-stock-illustration-cartoon-dad.jpg"  ,"https://thumbs.dreamstime.com/b/mother-children-young-woman-two-boys-happy-family-lifestyle-vector-illustration-64072448.jpg" ,"https://thumbs.dreamstime.com/z/big-brother-giving-his-little-brother-piggyback-ride-illustration-89952242.jpg", "https://image.shutterstock.com/image-vector/illustration-cute-baby-boy-clapping-260nw-102969851.jpg"];
+var names = [ "Shvetang dave", "Palak dave","devarsh dave","rian dave"];
+ 
+
+var i=0;
+function update()
+{
+    i++;
+    var number_of_family_member_in_array = 5
+    if(i > number_of_family_member_in_array)
+    {
+i = 0;
+
+}
+
+var updateimage = images[i];
+var updatename = names[i];
+
+document.getElementById("family_member_image").src = updateimage;
+document.getElementById("family_member_name").innerHTML = updatename;
+
+
+
+
+
+}
+
+
+
+
+
+</script>
+
+
+</html>
